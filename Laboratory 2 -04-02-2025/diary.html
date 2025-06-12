@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+<title>Laboratory 2 - 04/02/2025</title>
+<script>
+	function displayContent() {
+		var date = document.getElementById("date").value;
+		var feeling = document.getElementById("feeling").value;
+		var content = document.getElementById("content").value;
+		var message = "Date: " + date + "</br>How Are You Feeling: " + feeling + "</br>Content: " + content;
+		document.getElementById("output").innerHTML = message;
+		return false;
+		}
+
+</script>
+</head>
+
+
+<body>
+
+<h1>DIARY</h1>
+	<form onsubmit="return displayContent()">
+	<label for="date">Date: </label>
+	<input type="date" id="date" name="date" required>
+	</br>
+	</br>
+	<label for="feeling">How Are You Feeling: </label>
+	<input type="text" id="feeling" name="feeling" required>
+	</br>
+	</br>
+	<label for="content">Content: </label>
+	</br>
+	</br>
+	<input type="text" id="content" name="content" style="height:100px" required>
+	</br>
+	</br>
+	</br>
+	<input type="submit" value="Submit">
+	</form>
+</br>
+<h2>DIARY OUTPUT</h2>
+<p id="output"</p>
+
+</body>
+</html>
